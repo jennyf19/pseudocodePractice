@@ -31,7 +31,7 @@ namespace pseudocodePractice
             }
             Console.ReadLine();*/
 
-            Console.WriteLine("Enter a number between 0 and 29: ");
+            /*Console.WriteLine("Enter a number between 0 and 29: ");
             int num = int.Parse(Console.ReadLine());
             if (num > 0 && num < 10)
             {
@@ -47,7 +47,36 @@ namespace pseudocodePractice
             }
             else
                 Console.WriteLine("you have not entered a color option");
+            Console.ReadLine();*/
+            Console.WriteLine("Please enter a number: ");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter a second number: ");
+            int num2 = int.Parse(Console.ReadLine());
+
+            int div;
+            int sub;
+            int add = num2 + num1;
+            int multi = num2 * num1;
+
+            if (num1 > num2)
+            {
+                div = num1 / num2;
+                sub = num1 - num2;
+            }
+            else
+            {
+                div = num2 / num1;
+                sub = num2 - num1;
+            }
+            Console.WriteLine("here are the results for the numbers "
+                + num1 + " and " + num2 + ": \n Add: " + add + "\n Subtract: " + sub +
+                "\n Multiply: " + multi + "\n Divide: " + div);
             Console.ReadLine();
         }
     }
+
 }
+
+
+
+
